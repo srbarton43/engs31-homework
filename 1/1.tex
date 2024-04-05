@@ -73,8 +73,8 @@
       HEX: \texttt{0x7F} \\
       BCD: \texttt{0001 0010 0111}
     \item 
-      BIN: \texttt{01010100} \\
-      HEX: \texttt{0x54} \\
+      BIN: \texttt{01000100} \\
+      HEX: \texttt{0x44} \\
       BCD: \texttt{0110 1000}
   \end{enumerate}
   \item 
@@ -89,7 +89,7 @@
       BCD: 48
     \item 
       HEX: \texttt{0x5E} \\
-      DEC: 94
+      DEC: 94 \\
       BCD: N/A
   \end{enumerate}
   \item 
@@ -102,9 +102,9 @@
       \end{gather*}
       \begin{figure} [H]
       \begin{tabular}{c}
-        \includegraphics[width=0.3\textwidth]{./Images/A.jpeg}\\
-        \includegraphics[width=0.3\textwidth]{./Images/B.jpeg}\\
-        \includegraphics[width=0.3\textwidth]{./Images/C.jpeg}\\
+        \includegraphics[width=0.3\textwidth]{./figures/A.jpeg}\\
+        \includegraphics[width=0.3\textwidth]{./figures/B.jpeg}\\
+        \includegraphics[width=0.3\textwidth]{./figures/C.jpeg}\\
       \end{tabular}
       \centering
       \caption{Unsimplified Logic Circuits}
@@ -133,6 +133,8 @@
       \end{equation*}
   \end{enumerate}
 \item . \\
+  \begin{figure} [H]
+    \center
     \begin{tabular}{|l|l|l|l||l|}
       \hline
       \textbf{A}	 & 	\textbf{B}	 & 	\textbf{C}	 & 	\textbf{D}	 & 	\textbf{X} \\ \hline
@@ -153,6 +155,25 @@
       1	 & 	1	 & 	1	 & 	0	 & 	0 \\ \hline
       1	 & 	1	 & 	1	 & 	1	 & 	0 \\ \hline
       \end{tabular}
+      \caption{Truth Table}
+  \end{figure}
+
+  \begin{figure} [H]
+    \center
+    \includegraphics[width=0.33\textwidth]{figures/karnaugh.jpeg}
+    \caption{Karnaugh Map}
+  \end{figure}
+
+  Simplified logic equation:
+  \begin{equation*}
+    X=A'B'+C'D+AB'C
+  \end{equation*}
+
+  Number of transistors:
+  \begin{itemize}
+    \item Before: 30 gates, 150 transistors (AND: 9x12; OR: 1x20; NOT: 20x2)
+    \item After: 8 gates, 36 transistors (AND: 2x6+1x8; OR: 1x8; NOT: 4x2)
+  \end{itemize}
 
 \end{enumerate}
 
